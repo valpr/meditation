@@ -1,0 +1,30 @@
+.Background{
+    height:100%;
+    width:100%;
+    text-align:center;
+    padding-top:20%;
+}
+.Container{
+    float:left;
+    margin-left:10%;
+    margin-right:10%;
+
+}
+
+.SVGContainer{
+    display:block;
+    padding: 0 1em 0 1em;
+}
+
+
+svg{
+    x:0px;
+    y:0px;
+    viewBox:0 0 512 512;
+    width:30;
+    fill:purple;
+}
+
+svg:hover{
+    fill:blue;
+}
