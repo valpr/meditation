@@ -11,7 +11,7 @@ function Modal(props){
                 <input onChange={(e)=>props.setMinutes(e)} value={Math.floor(props.seconds/60)} type ="text" id="minutes"></input>
 
             </div>
-            <button onClick={props.onClick}>Close</button>
+            <button id="Close" onClick={props.onClick}>Close</button>
             </div>
 
         </div>
