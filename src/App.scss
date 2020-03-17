@@ -22,10 +22,41 @@ svg{
     x:0px;
     y:0px;
     viewBox:0 0 512 512;
-    width:30;
+    width:30px;
+    height:30px;
     fill:purple;
 }
 
 svg:hover{
     fill:blue;
+}
+svg:active{
+    fill:red;
+}
+.Buttons{
+    margin-top: 1rem;
+}
+.Buttons> button{
+    margin-left:.5rem;
+    margin-right:.5rem;
+    position: relative;
+    z-index: 1;
+    display:inline-block;
+    padding:10px 20px;
+    font-size: 1.4rem;
+    box-sizing:border-box;
+    background-color: transparent;
+    border: solid 4px transparent;
+    border-image: linear-gradient( to right, orangered, transparent);
+    border-image-slice: 1;
+    color: orangered;
+    transition: all 0.3s ease-in-out;
+}
+
+.Buttons>button:hover{
+    border-image: linear-gradient( to right, orangered, purple);
+    color:white;
+    border-image-slice: 1;
+
+    
 }

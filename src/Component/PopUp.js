@@ -8,7 +8,7 @@ function Modal(props){
             <div>
             <label >Enter Minutes to Meditate</label>
             <div className="Time">
-                <input onChange={(e)=>props.setMinutes(e)} value={props.minutes} type ="text" id="minutes"></input>
+                <input onChange={(e)=>props.setMinutes(e)} value={Math.floor(props.seconds/60)} type ="text" id="minutes"></input>
 
             </div>
             <button onClick={props.onClick}>Close</button>

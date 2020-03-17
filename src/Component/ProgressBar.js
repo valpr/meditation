@@ -1,17 +1,18 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './progressbar.scss';
 
 function TimeBar(props){
     return(
         <div id="bar">
-            <Progress percentage={props.percentage}/>
+            <Progress percentage={(props.total-props.timeLeft)/props.total*100}/>
         </div>
     )
 }
 
 const Progress = (props) =>{
     return (
-    <div className="fill" style={{width: `${props.percentage}%`}}></div> 
+        
+    <span className="fill" style={{width: `${props.percentage}%`}}></span> 
     
     )}
 
