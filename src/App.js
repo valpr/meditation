@@ -13,7 +13,7 @@ function App(props) {
   const [timeLeft, setTimeLeft]= useState(600);
   const [show, setShow] = useState(false);
   const [active, setActive] = useState(false);
-  const noise = useRef(new Audio('none'));
+  const noise = useRef(new Audio('http://www.orangefreesounds.com/wp-content/uploads/2020/03/Rain-on-window-sound.mp3'));
   noise.current.loop= true;
   function openPopup(){
     if (!active){
