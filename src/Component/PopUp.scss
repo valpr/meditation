@@ -1,0 +1,40 @@
+$z-index: (
+    blackBack: 50,
+    modal:60,
+
+);
+
+.blackBack{
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    z-index: map-get($z-index, blackBack)
+}
+
+#modal{
+    color:white;
+    background-color:skyblue;
+    text-align: center;
+    display:block;
+    opacity:1;
+    width:400px;
+    z-index: map-get($z-index, modal)
+
+}
+
+#modal>*>*{
+    display:block;
+    margin:auto;
+    
+}
+
+.Time{
+    padding-left:20%;
+    padding-right:20%;
+}
